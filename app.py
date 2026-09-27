@@ -54,7 +54,7 @@ def get_hardware_data():
 
         if (
             not THINGSPEAK_CHANNEL_ID
-            or THINGSPEAK_CHANNEL_ID == "3502394"
+            or THINGSPEAK_CHANNEL_ID == "YOUR_CHANNEL_ID"
         ):
 
             return (
@@ -65,7 +65,7 @@ def get_hardware_data():
 
         url = (
             f"https://api.thingspeak.com/channels/"
-            f"{3502394}/feeds/last.json"
+            f"{THINGSPEAK_CHANNEL_ID}/feeds/last.json"
         )
 
 
